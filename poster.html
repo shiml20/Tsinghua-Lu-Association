@@ -93,14 +93,16 @@
         .btn {
             background: var(--secondary);
             color: white;
-            padding: 14px 35px;
-            border-radius: 30px;
-            display: block;
+            padding: 14px 28px; /* 调整左右内边距 */
+            border-radius: 25px; /* 调整圆角大小 */
+            display: inline-block; /* 改为行内块元素 */
             margin: 20px auto 0;
             transition: all 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
             text-decoration: none;
             font-weight: 600;
             box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+            font-size: 0.95em; /* 调整字体大小 */
+            min-width: 160px; /* 设置最小宽度 */
         }
 
         .btn:hover {
@@ -196,7 +198,11 @@
 <body>
     <div class="poster">
         <div class="ribbon">火热招新</div>
-        <div class="header">鲁协</div>
+        <div class="qrcode-container">
+        <img src="logo.png" class="qrcode" alt="鲁协招新二维码">
+        </div>
+        <!-- 加一个空行         -->
+        <div class="header">鲁协招新</div>
         <div class="subtitle">加入我们，开启精彩鲁透社！</div>
         <div class="content">
             <p>招新对象：<span class="highlight">清华同学</span></p>
@@ -206,7 +212,7 @@
             <a href="#" class="btn">扫码立即加入</a>
         </div>
         <div class="qrcode-container">
-            <img src="/Users/shiml20/Documents/code/luxie_2025.png" class="qrcode" alt="鲁协招新二维码">
+            <img src="luxie_2025.png" class="qrcode" alt="鲁协招新二维码">
             <div class="qrcode-label">扫码加入鲁协大家庭</div>
         </div>
         <div class="footer">鲁协爱你哦😘</div>
